@@ -1,4 +1,3 @@
-Initial implementation 
 The design consists of two major components Parsers and DataStore
 DataStore :
 ---------
