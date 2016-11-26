@@ -19,6 +19,12 @@ import org.xml.sax.helpers.DefaultHandler;
 
 import com.waldo.datastore.EXIFContent;
 
+/**
+ * Parser to read the contents from network
+ * SAX based implementation for XML content
+ * @author Kalyan
+ *
+ */
 public class NetworkParser extends DefaultHandler implements Parser {
 
   private URL networkStoreURL;
@@ -27,7 +33,7 @@ public class NetworkParser extends DefaultHandler implements Parser {
   private List<EXIFContent> exifContentList = new ArrayList<EXIFContent>();
 
   public NetworkParser() throws Exception {
-    networkStoreURL = new URL("http://s3.amazonaws.com/waldo-recruiting");
+    networkStoreURL = new URL("http://s3.amazonaws.com/waldo-recruiting");//TODO externalize
   }
 
   @Override
